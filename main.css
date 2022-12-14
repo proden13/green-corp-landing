@@ -46,6 +46,17 @@ header {
   .about__sun-image {
     width: 100px;
     height: 100px;
+    animation: rotation 10s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+    
   }
 
   .about {
@@ -127,7 +138,7 @@ header {
   .form label {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .form input {
@@ -137,6 +148,7 @@ header {
     padding: 0 20px;
     border-radius: 15px;
     border: none;
+    outline: none;
   }
 
   .form select {
@@ -165,6 +177,7 @@ header {
   button:hover {
     background-color: #f6980c;
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%)
+    transition: background-color 0.3s ease-in;
   }
 
   footer {

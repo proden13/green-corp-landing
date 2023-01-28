@@ -105,8 +105,58 @@ header {
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  .features {
+    background-color: #fff;
+    padding: 115px 60px;
+  }
+
+  .cards {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .card {
+    padding: 35px 40px 25px 40px;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+  }
+
+  .card h3 {
+    font-size: 16px; 
+    line-height: 22px;
+    opacity: 0.8;
+  }
+
+  .card__logo {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #eaeff9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ad1714;
+  }
+
+  .fa-solar-panel {
+    color: #ffb406;
+  }
+
+  .fa-chart-line {
+    color: #22a030;
+  }
+
+  .features__border {
+    margin: 50px 0px;
+    border-top: 1px solid #D9E4E6;
+    
+  }
+
   .form__container {
-    width: 550px;
+    width: 550px #E6EAF4;
   }
 
   .form {
@@ -170,6 +220,8 @@ header {
     font-weight: 600;
     margin-top: 40px;
   }
+
+
 
   select {
     appearance: none;
@@ -255,6 +307,14 @@ header {
         width: 75px;
         height: 75px;
     }
+
+    .features {
+      padding: 50px 10px;
+      display: grid;
+      grid-template-columns: auto;
+    }
+
+
   
     .form {
         padding: 50px 10px;
